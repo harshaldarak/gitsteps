@@ -1,0 +1,55 @@
+git config --global user.name Harshal
+git config --global user.email harshalddarak09@gmail.com
+git init
+git add .
+git commit -m "Intial commit"
+git status
+git remote add origin git@github.com:harshaldarak/wad.git
+git push origin master
+
+
+alert("Hi")
+function sendData(){
+let Email=document.getelementbyid("emial).value;
+let Password=document.getElemrentbyId("pass").value;
+let Address=document.getelelmentbyId("address").value;
+
+localstorahe.setitem("email",Email);
+localstorage.setitem("pass",Password);
+localstorage.setitem("address",Address);
+}
+onclick="sendData()"
+
+
+
+const express=require("express")
+const obj=express()
+const port=4000
+
+obj.use(express.static('app'))
+
+obj.listen(port,()=>{
+    console.log(`web file start at ${port}`)
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+const express=require('express');
+const obj=express();
+const port=4000;
+
+obj.use(express.static("app"));
+
+obj.listen(port(),=>{
+console.log(`web site is $(port)`)
+})
